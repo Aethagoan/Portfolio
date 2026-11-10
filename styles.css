@@ -35,7 +35,6 @@ body {
 
 .site-header {
   max-width: none;
-  padding-bottom: 3.25rem;
 }
 
 .eyebrow,
@@ -62,9 +61,16 @@ h1 {
   white-space: nowrap;
 }
 
+.experience-page h1 {
+  font-size: clamp(1.25rem, 5vw, 3.85rem);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
 h2,
 h3 {
-  margin-bottom: 1.7rem;
+  margin-bottom:1.7rem;
+  margin-top:.5rem;
   font-size: clamp(1.7rem, 3vw, 2.45rem);
   letter-spacing: -0.04em;
   line-height: 1.1;
@@ -78,7 +84,7 @@ h3 {
 }
 
 hr {
-  height: 1px;
+  height: 2px;
   margin: 0;
   border: 0;
   background: var(--line);
@@ -89,13 +95,10 @@ hr {
   flex-wrap: wrap;
   gap: 1.5rem 2.5rem;
   align-items: center;
+  justify-content: left;
   padding: 1.25rem 0;
   color: var(--muted);
   font-size: 0.9rem;
-}
-
-.contact-bar .location {
-  margin-left: auto;
 }
 
 a {
@@ -113,7 +116,7 @@ a:focus-visible {
 }
 
 .section-block {
-  padding: 2rem 0 5rem;
+  padding: 1rem 0 1rem;
 }
 
 .section-content {
@@ -220,6 +223,7 @@ a:focus-visible {
 .item-label {
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--line);
+  width: 50%;
   color: var(--faint);
 }
 
@@ -234,12 +238,17 @@ li {
   flex-direction: column;
   gap: 0.15rem;
   padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
 }
 
 li span {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.resume-item li a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 footer {
@@ -256,7 +265,7 @@ footer a {
 
 .competition-copy {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   color: var(--muted);
 }
 
@@ -277,7 +286,6 @@ footer a {
   flex-wrap: wrap;
   gap: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--line);
 }
 
 .competition-stat strong,
@@ -304,7 +312,7 @@ footer a {
   }
 
   .site-header {
-    padding-bottom: 2.5rem;
+    padding-bottom: 0rem;
   }
 
   .location {
