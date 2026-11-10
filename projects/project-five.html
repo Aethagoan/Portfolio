@@ -1,20 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SpaceWars | Aethagoan</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <main class="page-shell">
-      <a href="../index.html">← Back to portfolio</a>
-      <header class="site-header" style="padding-top: 5rem">
-        <p class="eyebrow">Competition project</p>
-        <h1>SpaceWars</h1>
-        <p class="intro">A C# console client for the SpaceWars coding challenge. I participated by developing and testing a client for the competition.</p>
-        <p><a href="https://github.com/Aethagoan/SpaceWars.Console">View source on GitHub ↗</a></p>
-      </header>
-    </main>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceWars | Aethagoan</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <a href="../index.html">← Back to portfolio</a>
+    <header class="site-header" style="padding-top: 5rem">
+      <p class="eyebrow">Competition project</p>
+      <h1>SpaceWars</h1>
+      <p class="intro">A C# console client for the SpaceWars coding challenge. I won the competition with this project.
+      </p>
+      <p>The key was figuring out the positions of all enemies. When we got access to the project, nobody seemed to find
+        an easy endpoint where we could get the game state. Many people tried to write just simple skill bots, and for
+        some, it kind of worked, but nobody else did what I did, which was to inspect the game page/hud that the server
+        gave you, and I realized that I could scrape the page using a web-scraping library and a little injected
+        javascript. Got me the positions like a charm, and I used that and some simple trig maths to build an aimbot.
+        Needless to say, I blew all of my competition away when I had the ability to just point and shoot with one press
+        of a button, after that, it was pretty simple, defeat a few enemies, buy the farthest-range and most damaging
+        weapon in the game, and just unleash the full potential of the bot, and wipe out the rest of the competition
+        with 10x the score of the next player down.</p>
+      <p><a href="https://github.com/Aethagoan/SpaceWars.Console">View source on GitHub ↗</a></p>
+    </header>
+  </main>
+</body>
+
 </html>
