@@ -263,6 +263,18 @@ footer a {
   color: var(--muted);
 }
 
+.experience-page .site-header h1 {
+  font-size: clamp(1.5rem,5vw,3rem);
+  margin-top:0.4rem;
+  margin-bottom:0.4rem;
+}
+
+.project-page .site-header h1 {
+  font-size: clamp(1.5rem,5vw,3rem);
+  margin-top:0.4rem;
+  margin-bottom:0.4rem;
+}
+
 .competition-copy {
   display: grid;
   gap: 1rem;
