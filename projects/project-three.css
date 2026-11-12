@@ -2,8 +2,9 @@
   --project-accent: #70d6a0;
   --project-accent-dark: #3ca875;
   --project-panel: #2b2d2b;
-  --project-panel-light: #383b38;
-  --project-border: #4a4d49;
+  --project-panel-light: #242624;
+  --project-border: #171917;
+  --project-label: #101210;
   --project-text-muted: #b7bbb5;
   background: #202220;
 }
@@ -54,11 +55,11 @@ body.project-three-page {
   margin-top: 1.5rem;
 }
 
-.project-three .project-screenshot {
+.project-page.project-three .project-gallery .project-screenshot {
   margin: 0;
-  border: 1px solid var(--project-border);
+  border: 1px solid #0d0f0d;
   border-radius: 8px;
-  background: var(--project-panel-light);
+  background: #1a1c1a;
   overflow: hidden;
 }
 
@@ -71,6 +72,7 @@ body.project-three-page {
 .project-three .project-screenshot figcaption {
   padding: 0.6rem 0.75rem;
   border-top: 1px solid var(--project-border);
+  background: var(--project-label);
   color: var(--project-text-muted);
   font-size: 0.78rem;
 }
