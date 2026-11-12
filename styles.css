@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   text-align: left;
+  user-select: none;
 }
 
 .page-shell {
@@ -162,11 +163,12 @@ a:focus-visible {
 .project-card {
   display: grid;
   grid-template-columns: 1fr auto;
+  width: 60%;
   gap: 1rem;
   padding: 0.75rem;
   border: 1px solid var(--line);
   background: var(--surface);
-  transition: border-color 160ms ease, transform 160ms ease;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }
 
 .project-card:hover,
@@ -178,14 +180,73 @@ a:focus-visible {
 .project-media {
   display: flex;
   grid-column: 1 / -1;
-  min-height: 150px;
+  width: fit-content;
+  max-width: 50%;
+  min-width: 5rem;
+  min-height: 5rem;
+  height: 8rem;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   border: 1px dashed var(--faint);
   color: var(--faint);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.project-media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.project-card-one {
+  --project-accent: #65d8ff;
+}
+
+.project-card-two {
+  --project-accent: #ff6f61;
+}
+
+.project-card-three {
+  --project-accent: #72d572;
+}
+
+.project-card-four {
+  --project-accent: #d7a8ff;
+}
+
+.project-card-five {
+  --project-accent: #ffca5c;
+}
+
+.project-card-six {
+  --project-accent: #9cc8ff;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  border-color: var(--project-accent, var(--accent));
+  background-color: color-mix(in srgb, var(--project-accent, var(--accent)) 12%, var(--surface));
+}
+
+.project-card:hover .project-media,
+.project-card:focus-visible .project-media {
+  border-color: var(--project-accent, var(--accent));
+  box-shadow: 0 0 0.8rem color-mix(in srgb, var(--project-accent, var(--accent)) 45%, transparent);
+}
+
+.project-card-copy {
+  grid-column: 1;
+}
+
+.project-card > .arrow {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .project-card-copy strong,
@@ -336,7 +397,6 @@ footer a {
 
 .competition-copy p {
   margin: 0;
-  max-width: 470px;
   font-size: 1.08rem;
 }
 
@@ -405,5 +465,15 @@ footer a {
 
   .section-heading h2 {
     margin-bottom: 0.6rem;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr auto;
+    width: 100%;
+  }
+
+  .project-media {
+    max-width: 75%;
+    height: 6rem;
   }
 }

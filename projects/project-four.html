@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Practical Showcase | Aethagoan</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="project-base.css" />
+    <link rel="stylesheet" href="project-four.css" />
   </head>
   <body>
-    <main class="page-shell project-page">
+    <main class="page-shell project-page project-four">
       <a href="../index.html">← Back to portfolio</a>
-      <header class="site-header" style="padding-top: 5rem">
-        <p class="eyebrow">Project showcase</p>
+      <header class="site-header project-hero">
+        <p class="project-tag">Project showcase · SQL · data systems</p>
         <h1>Practical Showcase</h1>
-        <p class="intro">A practical software project. This showcase highlights my approach to building useful, focused software.</p>
+        <p class="intro">A practical database project focused on organizing customers, parts, certifications, schedules,
+          and service records into a structured relational system.</p>
+        <div class="project-links">
+          <a href="https://github.com/Aethagoan/DatabasesProject">View source on GitHub ↗</a>
+        </div>
       </header>
+      <section class="project-content">
+        <div class="project-panel">
+          <h2>What I built</h2>
+          <p>The project uses PostgreSQL schemas, sequences, and related tables to model operational data. It
+            demonstrates how a larger business workflow can be represented and queried consistently.</p>
+        </div>
+        <div class="project-panel">
+          <h2>Highlights</h2>
+          <ul>
+            <li>Designed relational tables for customers, parts, schedules, and certifications.</li>
+            <li>Used sequences and constraints to support reliable records.</li>
+            <li>Included SQL scripts for exercising and testing database behavior.</li>
+          </ul>
+        </div>
+      </section>
     <footer><a href="../index.html">← Back to portfolio</a></footer>
 </main>
   </body>

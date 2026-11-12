@@ -6,20 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Space Guild Project | Aethagoan</title>
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project-base.css" />
+  <link rel="stylesheet" href="project-one.css" />
 </head>
 
 <body>
-  <main class="page-shell project-page">
+  <main class="page-shell project-page project-one">
     <a href="../index.html">← Back to portfolio</a>
-    <header class="site-header"><h1><a href="../index.html">Aidan Anderson</a></h1></header>
-
-<header class="site-header" style="padding-top: 5rem">
-      <p class="eyebrow">Project showcase</p>
+    <header class="site-header project-hero">
+      <p class="project-tag">Project showcase · Python · web game</p>
       <h1>Space Guild Project</h1>
-      <p class="intro">A space game built as a website, developed in Python. I worked on the game structure and web
-        experience.</p>
-      <p><a href="https://github.com/Aethagoan/Space-Guild-Project">View source on GitHub ↗</a></p>
+      <p class="intro">A browser-based space game built with a Python backend. Players navigate the cosmos, upgrade
+        their ships, battle across a shared world, and build a legacy among the stars.</p>
+      <div class="project-links">
+        <a href="https://github.com/Aethagoan/Space-Guild-Project">View source on GitHub ↗</a>
+      </div>
     </header>
+    <section class="project-content">
+      <div class="project-panel">
+        <h2>What I built</h2>
+        <p>The project combines a FastAPI backend with a lightweight web client. The backend models locations, ships,
+          factions, items, and player actions, while the client provides a terminal-inspired interface for exploring
+          the game world.</p>
+        <img class="project-screenshot" src="media/space-guild.png" alt="Space Guild landing page running in a browser" />
+      </div>
+      <div class="project-panel">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Designed a shared game world with locations, factions, ships, and items.</li>
+          <li>Built API workflows for movement, combat, scanning, and player actions.</li>
+          <li>Added automated tests for game behavior, concurrency, and scalability.</li>
+        </ul>
+      </div>
+    </section>
   <footer><a href="../index.html">← Back to portfolio</a></footer>
 </main>
 </body>

@@ -1,0 +1,75 @@
+.project-page {
+  --project-accent: var(--accent);
+}
+
+.project-page .project-hero {
+  padding: 5rem 0 2rem;
+}
+
+.project-page .project-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.project-page .intro {
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+.project-page .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-page .project-links a {
+  color: var(--project-accent);
+}
+
+.project-page .project-content {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 75ch;
+  color: var(--muted);
+}
+
+.project-page .project-content h2 {
+  margin: 1rem 0 0;
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.project-page .project-content p {
+  margin: 0;
+}
+
+.project-page .project-content ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.project-page .project-content li {
+  display: list-item;
+  padding: 0.2rem 0;
+}
+
+.project-page .project-panel {
+  padding: 1.25rem;
+  border: 1px solid var(--project-accent);
+  background: var(--surface);
+}
+
+.project-page .project-screenshot {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+}
+
+.project-page .project-tag {
+  color: var(--project-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
