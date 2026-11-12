@@ -10,24 +10,42 @@
   <link rel="stylesheet" href="project-three.css" />
 </head>
 
-<body>
+<body class="project-three-page">
   <main class="page-shell project-page project-three">
     <a href="../index.html">← Back to portfolio</a>
     <header class="site-header project-hero">
-      <p class="project-tag">Project showcase · C# · game development</p>
+      <p class="project-tag">Project showcase · C# · web game · networking</p>
       <h1>JumpChess</h1>
-      <p class="intro">A chess variant built around jump-based movement rules. The project includes a C# game library,
-        an API, and a web client.</p>
+      <p class="intro">A chess variant built for fun with my wife, while exploring how two players can connect through
+        different networks and VPN setups.</p>
       <div class="project-links">
-        <a href="https://github.com/Aethagoan/JumpChess">View game source on GitHub ↗</a>
         <a href="https://github.com/Aethagoan/JumpChessWeb">View web source on GitHub ↗</a>
+        <a class="game-source-link" href="https://github.com/Aethagoan/JumpChess">View game source on GitHub ↗</a>
       </div>
     </header>
     <section class="project-content">
       <div class="project-panel">
         <h2>What I built</h2>
-        <p>JumpChess separates game rules from the web experience. The shared game library handles board state and
-          moves, the API exposes game operations, and the browser client renders the board and player controls.</p>
+        <p>JumpChess adds a simple twist to familiar chess: each piece can hop over one friendly piece during a move.
+          The shared C# game library enforces the rules, an API manages games and moves, and the browser client renders
+          the board and player controls.</p>
+        <p>It was also an experiment in connecting people outside the same local network. The settings page lets each
+          player target a configurable API address, making it possible to test local hosting, port forwarding, and VPN
+          connections such as a private network between players.</p>
+        <div class="project-gallery">
+          <figure class="project-screenshot">
+            <img src="media/gamesandfrontpagejumpchess.png" alt="JumpChess current games page in a browser" />
+            <figcaption>Current games</figcaption>
+          </figure>
+          <figure class="project-screenshot">
+            <img src="media/jumpchesssetup.png" alt="JumpChess new game setup page" />
+            <figcaption>Game setup</figcaption>
+          </figure>
+          <figure class="project-screenshot">
+            <img src="media/jumpchessgame.png" alt="JumpChess board during a game" />
+            <figcaption>Playing a game</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="project-panel">
         <h2>Highlights</h2>

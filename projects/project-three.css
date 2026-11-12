@@ -1,3 +1,80 @@
 .project-three {
-  --project-accent: #72d572;
+  --project-accent: #70d6a0;
+  --project-accent-dark: #3ca875;
+  --project-panel: #2b2d2b;
+  --project-panel-light: #383b38;
+  --project-border: #4a4d49;
+  --project-text-muted: #b7bbb5;
+  background: #202220;
+}
+
+body.project-three-page {
+  background: #202220;
+}
+
+.project-three .project-hero {
+  border-bottom: 1px solid var(--project-border);
+}
+
+.project-three .project-tag,
+.project-three .project-links a {
+  color: var(--project-accent);
+}
+
+.project-three .project-links .game-source-link {
+  color: #a7aaa6;
+}
+
+.project-three .project-panel {
+  border: 1px solid var(--project-border);
+  border-radius: 8px;
+  background: var(--project-panel);
+}
+
+.project-three .project-panel h2 {
+  color: var(--project-accent);
+}
+
+.project-three .project-panel p,
+.project-three .project-panel li {
+  color: var(--project-text-muted);
+}
+
+.project-three .project-panel li {
+  border-bottom: 1px solid var(--project-border);
+}
+
+.project-three .project-panel li:last-child {
+  border-bottom: 0;
+}
+
+.project-three .project-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-three .project-screenshot {
+  margin: 0;
+  border: 1px solid var(--project-border);
+  border-radius: 8px;
+  background: var(--project-panel-light);
+  overflow: hidden;
+}
+
+.project-three .project-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-three .project-screenshot figcaption {
+  padding: 0.6rem 0.75rem;
+  border-top: 1px solid var(--project-border);
+  color: var(--project-text-muted);
+  font-size: 0.78rem;
+}
+
+.project-three footer a {
+  color: var(--project-text-muted);
 }

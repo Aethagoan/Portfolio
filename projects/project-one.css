@@ -12,10 +12,6 @@ body.project-one-page {
   --project-text-muted: #b0b0b0;
 }
 
-.project-one .project-hero {
-  border-bottom: 2px solid var(--project-border);
-}
-
 .project-one .project-tag,
 .project-one .project-links a {
   color: var(--project-accent);
