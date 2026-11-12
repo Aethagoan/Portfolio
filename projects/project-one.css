@@ -1,3 +1,78 @@
+body.project-one-page {
+  background: #0a0a0a;
+  font-family: "Courier New", monospace;
+}
+
 .project-one {
-  --project-accent: #65d8ff;
+  --project-accent: #00c853;
+  --project-terminal: #dcdcdc;
+  --project-panel: #1a1a1a;
+  --project-panel-muted: #252525;
+  --project-border: #424242;
+  --project-text-muted: #b0b0b0;
+}
+
+.project-one .project-hero {
+  border-bottom: 2px solid var(--project-border);
+}
+
+.project-one .project-tag,
+.project-one .project-links a {
+  color: var(--project-accent);
+}
+
+.project-one .project-panel {
+  border: 2px solid var(--project-terminal);
+  border-radius: 0;
+  background: var(--project-panel);
+}
+
+.project-one .project-panel h2 {
+  color: var(--project-terminal);
+  font-family: "Courier New", monospace;
+  letter-spacing: 0;
+}
+
+.project-one .project-panel p,
+.project-one .project-panel li {
+  color: var(--project-text-muted);
+}
+
+.project-one .project-panel li {
+  border-bottom: 1px solid var(--project-border);
+}
+
+.project-one .project-panel li:last-child {
+  border-bottom: 0;
+}
+
+.project-one .project-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-one .project-gallery .project-screenshot {
+  margin: 0;
+  border-color: #1f5a35;
+  background: var(--project-panel-muted);
+}
+
+.project-one .project-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-one .project-screenshot figcaption {
+  padding: 0.6rem 0.75rem;
+  border-top: 1px solid #1f5a35;
+  background: #12351f;
+  color: var(--project-terminal);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+}
+
+.project-one footer a {
+  color: var(--project-text-muted);
 }
