@@ -245,10 +245,63 @@ li span {
   font-size: 0.85rem;
 }
 
-.resume-item li a {
+.experience-details {
+  border-bottom: 1px solid transparent;
+}
+
+.experience-details summary {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 0.15rem;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.experience-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.experience-details summary::before {
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  display: grid;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  content: ">";
+  font-size: 0.8rem;
+  line-height: 1;
+  place-items: center;
+  transition: transform 160ms ease;
+}
+
+.experience-details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.experience-details summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0.25rem;
+}
+
+.experience-description {
+  max-width: 62ch;
+  padding: 0.7rem 0 0.4rem 1.8rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.experience-description p {
+  margin: 0;
+}
+
+.experience-description p + p {
+  margin-top: 0.7rem;
 }
 
 footer {
